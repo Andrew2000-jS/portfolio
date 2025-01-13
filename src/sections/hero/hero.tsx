@@ -15,7 +15,6 @@ import { useMediaQuery } from "react-responsive";
 import { calculateSizes } from "../../lib";
 
 const Hero = () => {
-  // Use media queries to determine screen size
   const isSmall = useMediaQuery({ maxWidth: 440 });
   const isMobile = useMediaQuery({ maxWidth: 768 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
@@ -33,7 +32,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <div className="w-full h-full absolute inset-0">
+      {/* <div className="w-full h-full absolute inset-0">
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
@@ -60,10 +59,14 @@ const Hero = () => {
             </group>
 
             <ambientLight intensity={1} />
-            <directionalLight position={[10, 10, 10]} intensity={0.5} />
+            <directionalLight
+              position={[10, 10, 10]}
+              intensity={0.5}
+              castShadow={false}
+            />
           </Suspense>
         </Canvas>
-      </div>
+      </div> */}
 
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
         <a href="#about" className="w-fit">
