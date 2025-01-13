@@ -1,25 +1,25 @@
-import { PerspectiveCamera } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+// import { PerspectiveCamera } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
 import {
   Button,
-  CanvasLoader,
-  Cube,
-  HackerRoom,
-  HeroCamera,
-  ReactLogo,
-  Rings,
-  Target,
+  // CanvasLoader,
+  // Cube,
+  // HackerRoom,
+  // HeroCamera,
+  // ReactLogo,
+  // Rings,
+  // Target,
 } from "../../components";
-import { Suspense } from "react";
-import { useMediaQuery } from "react-responsive";
-import { calculateSizes } from "../../lib";
+// import { Suspense } from "react";
+// import { useMediaQuery } from "react-responsive";
+// import { calculateSizes } from "../../lib";
 
 const Hero = () => {
-  const isSmall = useMediaQuery({ maxWidth: 440 });
-  const isMobile = useMediaQuery({ maxWidth: 768 });
-  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  // const isSmall = useMediaQuery({ maxWidth: 440 });
+  // const isMobile = useMediaQuery({ maxWidth: 768 });
+  // const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 
-  const sizes = calculateSizes(isSmall, isMobile, isTablet);
+  // const sizes = calculateSizes(isSmall, isMobile, isTablet);
 
   return (
     <section className="min-h-screen w-full flex flex-col relative" id="home">
